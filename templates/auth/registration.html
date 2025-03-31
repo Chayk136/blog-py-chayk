@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="text-center">{% trans "Регистрация" %}</h2>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="id_first_name" class="form-label">{% trans "Имя" %}</label>
+            {{ form.first_name }}
+        </div>
+        <div class="mb-3">
+            <label for="id_last_name" class="form-label">{% trans "Фамилия" %}</label>
+            {{ form.last_name }}
+        </div>
+        <div class="mb-3">
+            <label for="id_email" class="form-label">{% trans "Почта" %}</label>
+            {{ form.email }}
+        </div>
+        <div class="mb-3">
+            <label for="id_phone" class="form-label">{% trans "Номер телефона" %}</label>
+            {{ form.phone }}
+        </div>
+        <div class="mb-3">
+            <label for="password-input" class="form-label">{% trans "Пароль" %}</label>
+            {{ form.password1 }}
+        </div>
+        <div class="mb-3">
+            <label for="password-input" class="form-label">{% trans "Подтверждение пароля" %}</label>
+            {{ form.password2 }}
+        </div>
+        <button type="submit" class="btn btn-primary w-100">{% trans "Зарегистрироваться" %}</button>
+    </form>
+</div>
+
+{% endblock %}

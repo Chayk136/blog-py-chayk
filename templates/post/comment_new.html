@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+{% load i18n %}
+<div class="NewPost">
+    <h1>{% trans "Создание комментария" %}</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="content">{% trans "комментарий" %}</label>
+        {{form.content}}
+        <button type="submit">{% trans "Добавить комментарий" %}</button>        
+    </form>
+</div>
+{% endblock %}

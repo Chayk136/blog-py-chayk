@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-31 19:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\myvenv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\templates\auth\login.html:6 .\templates\base.html:44
+msgid "Авторизация"
+msgstr "Login"
+
+#: .\templates\auth\login.html:10 .\templates\auth\registration.html:18
+msgid "Почта"
+msgstr "Mail"
+
+#: .\templates\auth\login.html:17
+msgid "Войти"
+msgstr "Login"
+
+#: .\templates\auth\register_email_message.html:5
+msgid "Спасибо за регистрацию! На вашу почту {{email}} было отправленно сообщение для подтверждения активации."
+msgstr "Thank you for registering! A message has been sent to your email {{email}} to confirm activation."
+
+#: .\templates\auth\registration.html:6 .\templates\base.html:41
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\templates\auth\registration.html:10
+msgid "Имя"
+msgstr "Name"
+
+#: .\templates\auth\registration.html:14
+msgid "Фамилия"
+msgstr "Surname"
+
+#: .\templates\auth\registration.html:22
+msgid "Номер телефона"
+msgstr "Phone number"
+
+#: .\templates\auth\registration.html:26
+msgid "Пароль"
+msgstr "Password"
+
+#: .\templates\auth\registration.html:30
+msgid "Подтверждение пароля"
+msgstr "Password confirmation"
+
+#: .\templates\auth\registration.html:33
+msgid "Зарегистрироваться"
+msgstr "Register"
+
+#: .\templates\auth\success_activate.html:4
+msgid "Поздравляем с активацией аккаунта! Теперь вы можете авторизоваться!"
+msgstr "Congratulations on activating your account! You can now log in!"
+
+#: .\templates\base.html:37
+msgid "Выйти"
+msgstr "Logout"
+
+#: .\templates\base.html:54
+msgid "Все права защищены."
+msgstr "All rights reserved"
+
+#: .\templates\post\comment_new.html:5
+msgid "Создание комментария"
+msgstr "Creating a comment"
+
+#: .\templates\post\comment_new.html:8
+msgid "комментарий"
+msgstr "comment"
+
+#: .\templates\post\comment_new.html:10
+msgid "Добавить комментарий"
+msgstr "Add a comment"
+
+#: .\templates\post\newpost.html:5
+msgid "Создание поста"
+msgstr "Create a post"
+
+#: .\templates\post\newpost.html:8 .\templates\post\post_edit.html:8
+msgid "Заголовок"
+msgstr "Heading"
+
+#: .\templates\post\newpost.html:10 .\templates\post\post_edit.html:10
+msgid "Контент"
+msgstr "Content"
+
+#: .\templates\post\newpost.html:12 .\templates\post\post_edit.html:12
+msgid "Выбрать картинки:"
+msgstr "Select images:"
+
+#: .\templates\post\newpost.html:17
+msgid "Добавить пост"
+msgstr "Add a post"
+
+#: .\templates\post\post_details.html:8
+msgid "Добавить"
+msgstr "Add"
+
+#: .\templates\post\post_details.html:9
+msgid "Удалить"
+msgstr "DELETE"
+
+#: .\templates\post\post_details.html:23
+msgid "Опубликован:"
+msgstr "Published:"
+
+#: .\templates\post\post_details.html:30
+msgid "Добавить коментарий"
+msgstr "Add a comment"
+
+#: .\templates\post\post_edit.html:5
+msgid "Редактирование поста"
+msgstr "Editing a post"
+
+#: .\templates\post\post_edit.html:24
+msgid "Сохранить пост"
+msgstr "Save post"
+
+#: .\templates\post\post_list.html:7
+msgid "Новый пост"
+msgstr "New post"
+
+#: .\templates\post\post_list.html:23
+msgid "Автор"
+msgstr "Author"
+
+#: .\templates\post\post_list.html:27
+msgid "Редактирован"
+msgstr "Edited"

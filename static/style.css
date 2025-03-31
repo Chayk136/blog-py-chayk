@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1736273927244-a58a647e491a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    position: relative;
+    height: 60px;
+}
+
+header img {
+    height: 50px;
+    position: absolute;
+    left: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+footer {
+    z-index: 2;
+    margin-top: auto;
+}
+
+.posts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.post {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 650px;
+    height: 220px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 240px;
+    height: 180px;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prev-btn, .next-btn {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post h2 {
+    margin: 0 0 5px;
+    font-size: 1.3em;
+}
+
+.post p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* new post form */
+
+.NewPost{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    justify-self: center;
+}
+
+.NewPost form{
+    display: flex;
+    flex-direction: column;
+}
+
+.NewPost input, textarea{
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.NewPost input{
+    height: 30px;
+}
+
+.NewPost label{
+    padding-top: 20px;
+}
+
+/* post content form */
+.post-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.post-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Центрируем кнопки */
+    margin-bottom: 15px; /* Отступ от картинок */
+}
+
+.post-buttons button {
+    background-color: #000000; /* Черный фон */
+    color: white; /* Белый текст */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.post-buttons button:hover {
+        background-color: #0056b3;
+    }
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;  /* Чтобы не ломало верстку, если не влезет */
+    gap: 10px; /* Отступ между картинками */
+    justify-content: center; /* Центрируем изображения */
+    margin-top: 15px; /* Отступ от кнопок */
+}
+
+.images img {
+    width: 300px; /* Фиксированная ширина */
+    height: auto; /* Авто высота для сохранения пропорций */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.post_info .post-content {
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный */
+    color: white; /* Белый текст */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Добавляем относительное позиционирование */
+}
+
+.post-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-meta {
+    font-size: 12px; /* Делаем шрифт меньше */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.8;
+    text-align: right;
+}
+
+/* коменты */
+.comment-box {
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto 0; /* Центрируем и добавляем отступ сверху */
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Разделяем комментарии */
+    position: relative;
+}
+
+.comment:last-child {
+    border-bottom: none; /* Убираем границу у последнего комментария */
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-text {
+    margin: 5px 0;
+}
+
+.comment-meta {
+    font-size: 12px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    text-align: right;
+}

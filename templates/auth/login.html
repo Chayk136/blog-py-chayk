@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="text-center">{% trans "Авторизация" %}</h2>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="id_email" class="form-label">{% trans "Почта" %}</label>
+            {{ form.email }}
+        </div>
+        <div class="mb-3">
+            <label for="password-input" class="form-label">{% trans"Пароль" %}</label>
+            {{ form.password }}
+        </div>
+        <button type="submit" class="btn btn-primary w-100">{% trans "Войти" %}</button>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% load i18n %}
+<div class="post-details">
+    <div class="post_info">
+        {% if user.is_authenticated and user == post.author %}
+        <div class="post-buttons">
+            <a href="{% url 'edit_post' pid=post.pk %}"><button>{% trans "Добавить" %}</button></a>
+            <a href="{% url 'post_delete' pid=post.pk %}"><button>{% trans "Удалить" %}</button></a>
+        </div>
+        {% endif %}
+        
+        <div class="images">
+            {% for image in images %}
+                <img src="{{ image.file.url }}">
+            {% endfor %}
+        </div>
+
+        <div class="post-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <div class="post-meta">
+                {% trans "Опубликован:" %} {{ post.author }} ({{ post.time_stamp }})
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-box">
+        {% if user.is_authenticated %}
+            <a href="{% url 'add_comment' pid=post.pk %}"><button>{% trans "Добавить коментарий" %}</button></a>
+        {% endif %}
+        {% for comment in comments %}
+            <div class="comment">
+                <p class="comment-author">{{ comment.author.username }}</p>
+                <p class="comment-text">{{ comment.content }}</p>
+                <p class="comment-meta">{{ comment.time_stamp }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
