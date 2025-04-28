@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 19:27+0500\n"
+"POT-Creation-Date: 2025-04-28 19:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,8 +82,12 @@ msgid "Войти"
 msgstr "Login"
 
 #: .\templates\auth\register_email_message.html:5
-msgid "Спасибо за регистрацию! На вашу почту {{email}} было отправленно сообщение для подтверждения активации."
-msgstr "Thank you for registering! A message has been sent to your email {{email}} to confirm activation."
+msgid "Спасибо за регистрацию! На вашу почту"
+msgstr "Thank you for registering! A message has been sent to your email"
+
+#: .\templates\auth\register_email_message.html:5
+msgid "было отправленно сообщение для подтверждения активации."
+msgstr "to confirm activation."
 
 #: .\templates\auth\registration.html:6 .\templates\base.html:41
 msgid "Регистрация"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 19:26+0500\n"
+"POT-Creation-Date: 2025-04-28 19:58+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,8 +82,12 @@ msgid "Войти"
 msgstr "Жүйеге кіру"
 
 #: .\templates\auth\register_email_message.html:5
-msgid "Спасибо за регистрацию! На вашу почту {{email}} было отправленно сообщение для подтверждения активации."
-msgstr"Тіркелгеніңізге рахмет! Белсендіруді растау үшін {{email}} электрондық поштаңызға хабар жіберілді."
+msgid "Спасибо за регистрацию! На вашу почту"
+msgstr "Тіркелгеніңізге рахмет! Белсендіруді растау үшін"
+
+#: .\templates\auth\register_email_message.html:5
+msgid "было отправленно сообщение для подтверждения активации."
+msgstr "электрондық поштаңызға хабар жіберілді."
 
 #: .\templates\auth\registration.html:6 .\templates\base.html:41
 msgid "Регистрация"
@@ -115,7 +119,8 @@ msgstr "Тіркеу"
 
 #: .\templates\auth\success_activate.html:4
 msgid "Поздравляем с активацией аккаунта! Теперь вы можете авторизоваться!"
-msgstr "Тіркелгіңізді белсендіруіңізбен құттықтаймыз! Енді сіз жүйеге кіре аласыз!"
+msgstr ""
+"Тіркелгіңізді белсендіруіңізбен құттықтаймыз! Енді сіз жүйеге кіре аласыз!"
 
 #: .\templates\base.html:37
 msgid "Выйти"
