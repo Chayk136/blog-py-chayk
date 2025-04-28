@@ -28,7 +28,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('post/', include('post.urls')),
+    path('', include('post.urls')),
     path('auth/', include('user.urls')),
     path('activation/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/', activation, name='activate'),
 )
